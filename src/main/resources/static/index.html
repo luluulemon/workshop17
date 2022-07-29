@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1> Currency Converter </h1>
+    
+    From:
+    <select th:field="${Currency.currency}">
+        <option th:each="currencytype:${Currency.currencyList}" th:value="${currencytype}" 
+        th:text="${currencytype}"/>
+
+    </select>
+
+    To:
+    <select th:field="${Currency.toCurrency}">
+        <option value="Brazil" label="brazil"/>
+        <option value="Sg" label="Singapore"/>
+    </select>
+
+    Amount:
+
+</body>
+</html>

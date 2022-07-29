@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy</title>
+</head>
+<body>
+    <h3>    Currency Conversion     </h3>
+
+    Currency from: <span th:text="${Currency.currency}"/>
+    <br>
+    Currency to: <span th:text="${Currency.toCurrency}"/>
+    <br>
+    Amount to convert: <span th:text="${Currency.amount}"/>
+    <br>
+
+    <h3> Conversion results </h3>
+
+    Currency
+    <span th:text="${Currency.currency}"/>: <span th:text="${Currency.amount}"/>
+    <br>
+    Currency
+    <span th:text="${Currency.toCurrency}"/>: <span th:text="${Currency.convertedAmount}"/>
+
+</body>
+</html>
